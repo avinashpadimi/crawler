@@ -1,0 +1,7 @@
+adapter: postgresql
+encoding: unicode
+host: localhost
+username: ""
+password: ""
+database: web_crawler
+schema_search_path: public

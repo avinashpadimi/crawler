@@ -1,0 +1,46 @@
+
+Prerequisites:
+
+  1.Install ruby 2.6.3
+  2.Install ActiveRecord gem
+    
+      gem install activerecord
+
+  3.Install Postgres Database.
+     refer:  https://www.postgresqltutorial.com/install-postgresql/
+
+Database configuration:
+
+ Sample database.yml file :
+
+   adapter: postgresql
+   encoding: unicode
+   host: localhost
+   username: ""
+   password: ""
+   database: web_crawler
+   schema_search_path: public
+
+Application Configuration :
+
+ Sample config file:
+
+  url: "https://stackoverflow.com/"
+  pool_size: 5
+  page_limit: 10
+  timeout: 5
+
+  url:  
+    From which url we should start crawling.
+
+  pool_size: 
+    Number of active threads for the crawling.
+
+  timeout: 
+    Threshold of the program. (Program will be stopped if it crosses the threshold)
+
+  page_limit: 
+    Upper limit on pages to visit.
+
+How to execute the file:
+  ruby init.rb
