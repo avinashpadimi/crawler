@@ -27,7 +27,6 @@ end
 
 begin
   db_config = FileParser.parse('db/database.yml')
-  puts db_config
   table_name = "links"
 
   establish_conn db_config

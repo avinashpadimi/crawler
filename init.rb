@@ -13,6 +13,7 @@ begin
   config = FileParser.parse('config.yml')
   puts "Configuration ..........."
   puts config
+  puts "--------------------------------"
 
   unless is_valid_config?(config)
     puts "Invalid configuration please check README file to set the configuration"
